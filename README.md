@@ -1,8 +1,32 @@
 # love_letters
 
-Skeleton app for April challenge.
+This application is part of the April challenge (2022) for Flutter.
 
 See the details at https://flutterchallenge.dev/love-letters
+
+## Goals
+
+✅ The game can be played by 2 person
+
+✅ The pigeon can be sent by tapping the screen
+
+✅ There is a power meter that determines the power of your pigeon
+
+✅ The red bar in the power meter should go from left to right and right to left until the player touches the screen.
+
+✅ If the red bar stopped between the 90-90 area in the middle of the power meter, your pigeon can deliver the letter to your loved one. Otherwise, the pigeon fails.
+
+✅ You'll need to animate the pigeon based on the power.
+
+✅ If it has got enough power it flies from one castle to the another.
+
+✅ If it has not got enough power it flies straight until it has power and falls down after that until it goes out of the screen.
+
+✅ You'll need to animate the red bar in the power meter.
+
+✅ You'll need to increase the score of the players of the letter is delivered.
+
+✅ The game ends after each player tried to send 5 letters.
 
 ## Attributions
 
