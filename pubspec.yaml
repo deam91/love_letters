@@ -12,6 +12,12 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  flutter_riverpod: ^1.0.3
+  get_it: ^7.1.4
+  shared_preferences: ^2.0.13
+  animated_text_kit: ^4.2.1
+  url_launcher: ^6.0.20
+  confetti: ^0.6.0
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +28,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+    - assets/cup.png
