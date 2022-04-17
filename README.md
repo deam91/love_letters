@@ -30,7 +30,7 @@ See the details at https://flutterchallenge.dev/love-letters
 
 ## Playing the game video
 
-https://github.com/deam91/love_letters/blob/main/assets/playing-1.mp4
+https://github.com/deam91/love_letters/blob/main/assets/playing-1.mp4?raw=true
 
 ## Attributions
 
