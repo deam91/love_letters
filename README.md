@@ -32,7 +32,9 @@ See the details at https://flutterchallenge.dev/love-letters
 
 
 
-https://user-images.githubusercontent.com/11580629/163700391-e7dc9968-7308-4e88-bbaa-33799c5b5130.mp4
+
+https://user-images.githubusercontent.com/11580629/163700687-ad963d15-6e6b-4273-a9b2-a5fcd44d2194.mp4
+
 
 
 
