@@ -28,6 +28,10 @@ See the details at https://flutterchallenge.dev/love-letters
 
 ✅ The game ends after each player tried to send 5 letters.
 
+## Playing the game video
+
+[![](https://github.com/deam91/love_letters/blob/main/assets/images/bg.png)](https://github.com/deam91/love_letters/blob/main/assets/playing.mp4)
+
 ## Attributions
 
 - Love letter icon: https://www.flaticon.com/free-icons/love-letter
