@@ -75,10 +75,8 @@ class _GameAreaState extends ConsumerState<GameArea>
   }
 
   OverlayEntry _createOverlayEntry() {
-    final text =
-        flightDirection == FlightDirection.right ? 'Player 1' : 'Player 2';
     return OverlayEntry(
-      builder: (context) => WonOverlay(restart: reset, text: text),
+      builder: (context) => WonOverlay(restart: reset),
     );
   }
 
@@ -147,8 +145,8 @@ class _GameAreaState extends ConsumerState<GameArea>
               ? ref.read(gamePlayProvider).playersCount[1]++
               : ref.read(gamePlayProvider).playersCount[0]++;
         }
-        if (ref.read(gamePlayProvider).playersCount[0] == 5 ||
-            ref.read(gamePlayProvider).playersCount[1] == 5) {
+        if (ref.read(gamePlayProvider).playersCount[0] >= 5 &&
+            ref.read(gamePlayProvider).playersCount[1] >= 5) {
           // somebody win, lunch overlay with cup and confetti
           won = true;
           showWinOverlay();

@@ -5,10 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:love_letters/common/constants.dart';
 
 class WonOverlay extends StatelessWidget {
-  WonOverlay({Key? key, required this.restart, required this.text})
-      : super(key: key);
+  WonOverlay({Key? key, required this.restart}) : super(key: key);
   final Function restart;
-  final String text;
 
   final ConfettiController _controllerLeft =
       ConfettiController(duration: const Duration(seconds: 10));
@@ -59,12 +57,11 @@ class WonOverlay extends StatelessWidget {
                     'assets/cup.png',
                     fit: BoxFit.contain,
                   ),
-                  FittedBox(
+                  const FittedBox(
                     child: DefaultTextStyle(
-                      style:
-                          const TextStyle(color: Colors.white, fontSize: 40.0),
+                      style: TextStyle(color: Colors.white, fontSize: 40.0),
                       child: Text(
-                        '$text Win!!',
+                        'Love Won!!',
                       ),
                     ),
                   ),
