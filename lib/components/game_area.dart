@@ -90,7 +90,7 @@ class _GameAreaState extends ConsumerState<GameArea>
       print('animate pigeon..');
       double leftLimit = widgetMaxWidth;
       var realValue = 0.0;
-      if (auxValue > 0.4 && auxValue < 0.6) {
+      if (auxValue > 0.45 && auxValue < 0.55) {
         realValue = auxValue;
         if (flightDirection == FlightDirection.left) {
           left = 0.0;
@@ -100,10 +100,10 @@ class _GameAreaState extends ConsumerState<GameArea>
           print('flying right $left');
         }
       } else {
-        if (auxValue >= 0.6) {
+        if (auxValue >= 0.55) {
           realValue = 1 - auxValue;
         }
-        if (auxValue <= 0.4) realValue = auxValue;
+        if (auxValue <= 0.45) realValue = auxValue;
         if (flightDirection == FlightDirection.left) {
           left = leftLimit - realValue * leftLimit;
           print('flying left $left');
@@ -118,7 +118,7 @@ class _GameAreaState extends ConsumerState<GameArea>
   }
 
   onEndAnimation() {
-    if (currentValue != 0.0 && (currentValue <= 0.4 || currentValue >= 0.6)) {
+    if (currentValue != 0.0 && (currentValue <= 0.45 || currentValue >= 0.55)) {
       setState(() {
         print('falling down...');
         defaultBottom = -50;
@@ -141,7 +141,8 @@ class _GameAreaState extends ConsumerState<GameArea>
         animatingPigeon = false;
         duration = const Duration(milliseconds: 3000);
         curve = Curves.easeInOut;
-        if (currentValue != 0.0 && (currentValue > 0.4 || currentValue < 0.6)) {
+        if (currentValue != 0.0 &&
+            (currentValue > 0.45 || currentValue < 0.55)) {
           flightDirection == FlightDirection.left
               ? ref.read(gamePlayProvider).playersCount[1]++
               : ref.read(gamePlayProvider).playersCount[0]++;
